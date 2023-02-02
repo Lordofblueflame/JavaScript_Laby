@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<canvas id="canvas">
+</canvas>
+<div>
+    <div class="container">
+        <div>
+            <label for="no">Liczba kulek:</label>
+            <div id="no"></div>
+            <input type="text" id="setBalls">
+        </div>
+
+    </div>
+    <div class="container">
+        <label for="height">Y[%] :</label>
+        <input type="text" id="height" value="20"/><br>
+        <label for="width">X[%] :</label>
+        <input type="text" id="width" value="20"/><br>
+        <button id="changeSize">Change!</button>
+    </div>
+    <div class="container">
+        <button id="start">start</button>
+        <button id="reset">reset</button>
+    </div>
+    <div class="container">
+        <label for="fps">FPS: </label>
+        <div id="fps"></div>
+    </div>
+</div>
+</body>
+<script src="script.js"></script>
+</html>

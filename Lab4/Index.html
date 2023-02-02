@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Notes App</title>
+  <style>
+    table {
+      width: 100%;
+    }
+
+    td {
+      border: 1px solid black;
+      padding: 5px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Notes App</h1>
+
+  <form id="addNoteForm">
+    <input type="text" name="title" placeholder="Title" required>
+    <input type="text" name="description" placeholder="Description" required>
+    <input type="color" name="color" required>
+    <button type="submit">Add Note</button>
+  </form>
+
+  <table id="notesTable">
+    <thead>
+      <tr>
+        <th>Title</th>
+        <th>Description</th>
+        <th>Color</th>
+        <th>Date of Creation</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody id="notesTableBody">
+    </tbody>
+  </table>
+
+  <script src="script.js" ></script>
+</body>
+</html>
